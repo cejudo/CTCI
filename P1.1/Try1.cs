@@ -11,6 +11,10 @@ namespace P1._1
 
         static bool HasEveryCharacter(string test)
         {
+            if (test.Length<128)
+            {
+                return false;
+            }
             bool[] uniqueChars = new bool[128];
             var testChars = test.ToCharArray();
 
