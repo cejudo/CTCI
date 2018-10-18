@@ -9,9 +9,10 @@ namespace P1._1
 
         }
 
+        //O(test.length)
         static bool HasEveryCharacter(string test)
         {
-            if (test.Length<128)
+            if (test.Length>128)
             {
                 return false;
             }
